@@ -1,4 +1,4 @@
-# Logback appended for LogDNA
+# Logback appended for LogDNA [![Build Status](https://travis-ci.org/imdurgadas/logback-logdna.svg?branch=master)](https://travis-ci.org/imdurgadas/logback-logdna)
 
 LogDNA is a hosted logging platform: https://logdna.com.
 This library provides an asynchronous appender for logback, allowing to send your logs to the LogDNA platform (LogDNA + LogDNA service provided by Cloud providers).
