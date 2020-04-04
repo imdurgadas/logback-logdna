@@ -18,7 +18,7 @@ Add this dependency to your pom.xml
 </dependency>
 ```
 
-Logback uses XML file in known locations with the most common being `classpath:/logback.xml` e.g `src/main/resources/logback.xml`
+Logback uses XML file in known locations with the most common being `classpath:/logback.xml  | src/main/resources/logback.xml`
 
 Copy the content to your logback.xml:
 
@@ -51,16 +51,10 @@ Copy the content to your logback.xml:
     
 
  ### Configuration
-Set up your INGESTION_KEY (api key) via environment variables.
-
-Set up the LOGDNA_URL (api url) the same way.
- 
+* Set up your INGESTION_KEY (api key) via environment variables.
+* Set up the LOGDNA_URL (api url) the same way.
  `https://logs.logdna.com/logs/ingest`
- 
  `https://logs.us-south.logging.cloud.ibm.com/logs/ingest`
- 
-You can toggle including stacktrace using the `<includeStacktrace>true</includeStacktrace>` to either true or false
-
-Passing MDC as easy as `MDC.put(key,value)`.  You can view the data on LogDNA dashboard by using the following format:  
-
-`meta.{keyname}:"value"`
+* You can toggle including stacktrace using the `<includeStacktrace>true</includeStacktrace>` to either true or false
+* Passing MDC as easy as `MDC.put(key,value)`.  
+You can view the data on LogDNA dashboard by using the following format:  `meta.{keyname}:"value"`
