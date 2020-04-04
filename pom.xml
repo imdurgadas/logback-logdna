@@ -53,6 +53,38 @@
   </scm>
 
   <url>https://github.com/imdurgadas/logback-logdna</url>
+  
+   <dependencies>
+    <dependency>
+      <artifactId>logback-classic</artifactId>
+      <groupId>ch.qos.logback</groupId>
+      <version>1.2.3</version>
+    </dependency>
+    <dependency>
+      <artifactId>lombok</artifactId>
+      <groupId>org.projectlombok</groupId>
+      <version>${lombok.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>okhttp</artifactId>
+      <groupId>com.squareup.okhttp3</groupId>
+      <version>3.4.2</version>
+    </dependency>
+    <dependency>
+      <artifactId>json</artifactId>
+      <groupId>org.json</groupId>
+      <version>20190722</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>junit</artifactId>
+      <groupId>junit</groupId>
+      <scope>test</scope>
+      <version>4.12</version>
+    </dependency>
+  </dependencies>
+
+
   <build>
     <plugins>
 
@@ -116,7 +148,7 @@
               <goal>sign</goal>
             </goals>
             <id>sign-artifacts</id>
-            <phase>verify</phase>
+            <phase>deploy</phase>
           </execution>
         </executions>
         <groupId>org.apache.maven.plugins</groupId>
@@ -125,35 +157,6 @@
 
     </plugins>
   </build>
-  <dependencies>
-    <dependency>
-      <artifactId>logback-classic</artifactId>
-      <groupId>ch.qos.logback</groupId>
-      <version>1.2.3</version>
-    </dependency>
-    <dependency>
-      <artifactId>lombok</artifactId>
-      <groupId>org.projectlombok</groupId>
-      <version>${lombok.version}</version>
-    </dependency>
-    <dependency>
-      <artifactId>okhttp</artifactId>
-      <groupId>com.squareup.okhttp3</groupId>
-      <version>3.4.2</version>
-    </dependency>
-    <dependency>
-      <artifactId>json</artifactId>
-      <groupId>org.json</groupId>
-      <version>20190722</version>
-    </dependency>
-
-    <dependency>
-      <artifactId>junit</artifactId>
-      <groupId>junit</groupId>
-      <scope>test</scope>
-      <version>4.12</version>
-    </dependency>
-  </dependencies>
-
+ 
 
 </project>
