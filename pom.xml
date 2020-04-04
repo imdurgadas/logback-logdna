@@ -1,7 +1,58 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns="http://maven.apache.org/POM/4.0.0"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.imdurgadas</groupId>
   <artifactId>logback-logdna</artifactId>
+  <name>logback-logdna</name>
+  <packaging>jar</packaging>
+  <version>1.1</version>
+  <description>Log back appender for LogDNA</description>
+
+  <properties>
+    <lombok.version>1.18.10</lombok.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <developers>
+    <developer>
+      <email>imdurgadas@gmail.com</email>
+      <name>Durgadas Kamath</name>
+    </developer>
+  </developers>
+  <distributionManagement>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+
+  <issueManagement>
+    <system>Github</system>
+    <url>https://github.com/imdurgadas/logback-logdna/issues</url>
+  </issueManagement>
+
+  <licenses>
+    <license>
+      <name>MIT</name>
+      <url>https://opensource.org/licenses/MIT</url>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:git://github.com/imdurgadas/logback-logdna.git</connection>
+    <developerConnection>scm:git:git@github.com:imdurgadas/logback-logdna.git</developerConnection>
+    <tag>HEAD</tag>
+    <url>https://github.com/imdurgadas/logback-logdna</url>
+  </scm>
+
+  <url>https://github.com/imdurgadas/logback-logdna</url>
   <build>
     <plugins>
 
@@ -103,57 +154,6 @@
       <version>4.12</version>
     </dependency>
   </dependencies>
-  <description>Log back appender for LogDNA</description>
-  <developers>
-    <developer>
-      <email>imdurgadas@gmail.com</email>
-      <name>Durgadas Kamath</name>
-    </developer>
-  </developers>
-  <distributionManagement>
-    <repository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
-    <snapshotRepository>
-      <id>ossrh</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
-  </distributionManagement>
 
-  <groupId>com.github.imdurgadas</groupId>
-  <issueManagement>
-    <system>Github</system>
-    <url>https://github.com/imdurgadas/logback-logdna/issues</url>
-  </issueManagement>
 
-  <licenses>
-    <license>
-      <name>MIT</name>
-      <url>https://opensource.org/licenses/MIT</url>
-    </license>
-  </licenses>
-
-  <modelVersion>4.0.0</modelVersion>
-
-  <name>logback-logdna</name>
-  <packaging>jar</packaging>
-
-  <properties>
-    <lombok.version>1.18.10</lombok.version>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
-
-  <scm>
-    <connection>scm:git:git://github.com/imdurgadas/logback-logdna.git</connection>
-    <developerConnection>scm:git:git@github.com:imdurgadas/logback-logdna.git</developerConnection>
-    <tag>HEAD</tag>
-    <url>https://github.com/imdurgadas/logback-logdna</url>
-  </scm>
-
-  <url>https://github.com/nanosai/rion-ops-java</url>
-
-  <version>1.0</version>
 </project>
